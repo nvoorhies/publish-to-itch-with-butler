@@ -43,7 +43,7 @@ runs:
           BUTLER_PLATFORM="darwin-amd64"
         else
           echo "Unsupported OS: ${{ runner.os }}"
-          exit 1
+          # exit 1
         fi
         mkdir ./tools 2>/dev/null || true
         pushd tools
